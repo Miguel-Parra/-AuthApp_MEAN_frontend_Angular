@@ -1,27 +1,71 @@
-# AuthApp
+# **HeroesApp-Angular**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+El proyecto fue elaborado con [Angular CLI](https://github.com/angular/angular-cli) versión 13.3.3.
+## **Descripción**
 
-## Development server
+- Podremos crear una cuenta, nos verifica si existe (arroja mensajes de error) y si no existe nos arroja el dashboard guardando el json web token. Si lo borramos y recargamos el navegador web nos saca de la aplicación
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Si ya tenemos cuenta nos arroja un nuevo token cada vez que ingresemos a la aplicación
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## **Temas** ##
+<br>
+A continuación, se presenta los temas fundamentales aplicados en la elaboración de esta aplicación:
 
-## Build
+- 1. Conectar Angular con nuestro backend https://github.com/Miguel-Parra/AuthApp_MEAN_backend 
+- 2. Manejo de JWT
+- 3. Lazyload y rutas
+- 4. Guards
+- 5. Mantener el estado del usuario
+- 6. Manejo de errores
+- 7. RXJS y Operadores
+- 8. SweetAlert
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Tecnologías utilizadas:
 
-## Running unit tests
+- Angular
+- SweetAlert2
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+<br>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## **Sweetalert2**
 
-## Further help
+https://sweetalert2.github.io/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Es una librería con cuadros emergentes (popup boxes) elegantes. 
+
+Para instalarlo lo podemos hacer de 2 maneras:
+
+1. ``npm install sweetalert2``
+
+2. Mediante un cdn: ``<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>``
+
+<br>
+
+## **Backend**
+Para el backend se utilizo node junto con express.js.
+El proyecto se encuentra en: https://github.com/Miguel-Parra/AuthApp_MEAN_backend 
+
+<br>
+
+## **Heroku**
+
+<br>
+
+La aplicación se encuentra desplegada en:
+
+https://authapp-mean-angular-node.herokuapp.com/
+
+<br>
+
+## **Recomendaciones**
+
+<br>
+
+- Recuerden reconstruir los módulos de Node con `npm install`
+
+- Para correr el servidor de desarrollo ejecute `ng serve -o`. La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
+
+
+- Si desea compilar el proyecto ejecute `ng build`.
