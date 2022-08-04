@@ -12,14 +12,18 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./protected/protected.module')
       .then(m => m.ProtectedModule),
-      canActivate: [ValidarTokenGuard],
-      canLoad: [ValidarTokenGuard]
+    canActivate: [ValidarTokenGuard],
+    canLoad: [ValidarTokenGuard]
   },
   { path: '**', redirectTo: 'auth' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,
+    {
+      useHash: false,
+    }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
